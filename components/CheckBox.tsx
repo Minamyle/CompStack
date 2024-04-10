@@ -17,11 +17,12 @@ const CheckboxGroup = () => {
   };
 
   return (
-    <div className="grid grid-cols-2  gap-5 gap-y-10 mt-6">
+    <div className="grid grid-cols-2  gap-5 gap-x-0 lg:w-[60%] mt-6">
       {/* <div className="lg:flex gap-5 lg:mb-5"> */}
       <label className="flex items-center space-x-6 ">
         <input
           type="checkbox"
+          checked
           name="checkbox1"
           onChange={() => handleCheckboxChange("checkbox1")}
           className="h-5 w-5 rounded-12 styled-checkbox border-gray-300 focus:ring-gray-400 checked:bg-black checked:border-transparent"
@@ -32,6 +33,7 @@ const CheckboxGroup = () => {
       <label className="flex items-center space-x-6 ">
         <input
           type="checkbox"
+          checked
           name="checkbox2"
           onChange={() => handleCheckboxChange("checkbox2")}
           className="h-5 styled-checkbox w-5 rounded-full border-gray-300 focus:ring-gray-400 checked:bg-black checked:border-transparent"
@@ -44,6 +46,7 @@ const CheckboxGroup = () => {
       <label className="flex items-center space-x-6 ">
         <input
           type="checkbox"
+          checked
           name="checkbox3"
           onChange={() => handleCheckboxChange("checkbox3")}
           className="h-5 w-5 styled-checkbox rounded-full border-gray-300 focus:ring-gray-400 checked:bg-black checked:border-transparent"
@@ -54,6 +57,7 @@ const CheckboxGroup = () => {
       <label className="flex items-center space-x-6 ">
         <input
           type="checkbox"
+          checked
           name="checkbox4"
           onChange={() => handleCheckboxChange("checkbox4")}
           className="h-5 w-5 styled-checkbox rounded-full border-gray-300 focus:ring-gray-400 checked:bg-black checked:border-transparent"

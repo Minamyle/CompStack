@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const Compstack = () => {
   return (
-    <div className="max- relative padding-container mt-20 flex flex-col items-center justify-center mb-[3rem]">
-      <h1 className="text-center text-3xl lg:text-5xl mb-10 lg:mb-3 font-bold">
+    <div className="max- relative dm-sans padding-container mt-20 flex flex-col items-center justify-center mb-[3rem]">
+      <h1 className="text-center duru-sans text-3xl lg:text-5xl mb-10 lg:mb-3 font-bold">
         CompStack Solves All Your Payroll Needs
       </h1>
       <p className="text-center text-md lg:text-xl mb-8">
@@ -44,7 +44,7 @@ const Compstack = () => {
         width={40}
         height={40}
         alt=""
-        className="absolute bottom-0 right-[10%]"
+        className="absolute icon bottom-0 right-[10%]"
       />
     </div>
   );

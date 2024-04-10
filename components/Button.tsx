@@ -10,10 +10,10 @@ const Button = ({ type, title, icon, variant }: ButtonProps) => {
   return (
     <button
       type={type}
-      className={`flexCenter gap-3 rounded-2xl border ${variant}`}
+      className={`flexCenter items-center py-3 px-6 gap-3 rounded-md whitespace-nowrap transition duration-150 ease-in-out font-medium group ${variant}`}
     >
       <label className="bold-10 whitspace-nowrap">{title}</label>
-      {icon && <Image src={icon} alt={title} width={24} height={24} />}
+      {icon && <Image src={icon} alt={title} width={24} height={24} className="flex justify-center items-center tracking-normal text-primary-500 group-hover:translate-x-1.5 transition-transform duration-150 ease-in-out ml-1"/>}
     </button>
   );
 };

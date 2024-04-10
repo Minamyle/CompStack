@@ -5,14 +5,12 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-10 py-5 pb-10 md:gap-28 lg:py-20 xl:flex-row ">
-      <div className="order-2 lg:order-1 mx-5 ">
-        <h1 className="font-DuplicateSans font-medium text-4xl lg:text-5xl leading-[3rem] lg:leading-[5rem] tracking-tighter break-words ">
-          Your Solution For <br />
-          <span className="text-[#004bad] underline">
-            Simplified
-          </span> Payroll <br />
-          Management
+    <section className="max-container dm-sans padding-container flex flex-col gap-10 py-5 pb-10 md:gap-28 lg:py-20 xl:flex-row mt-[1.5rem] ">
+      <div className="order-2 lg:order-1 mx-5 lg:w-5/12">
+        <h1 className="font-DuplicateSans duru-sans font-medium text-4xl lg:text-7xl leading-[3rem] lg:leading-[5rem] tracking-tighter break-words ">
+          Your Solution For
+          <span className="text-[#004bad] underline ml-3">Simplified</span>{" "}
+          Payroll Management
         </h1>
         <p className="mt-5 mb-5">
           Streamline your payroll effortlessly with Compstack, <br />
@@ -37,13 +35,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="order-1 lg:order-2">
+      <div className="order-1 lg:order-2  lg:w-6/12 ">
         <Image
           src="/payroll-manager-illustration.svg"
           alt="payroll"
-          width={800}
-          height={100}
-          className="mt-0 pt-0"
+          width={1200}
+          height={200}
+          className="mt-5 pt-0"
         />
       </div>
     </section>

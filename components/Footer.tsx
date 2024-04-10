@@ -3,22 +3,21 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="border mt-[5rem]">
+    <div className="border dm-sans mt-[5rem]">
       <hr />
       <div className="flex flex-col px-[1rem] lg:grid gap-12 py-16 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-container">
         <div className="w-[100%]">
-          <h1 className="font-bold">COMPANY</h1>
+          <h1 className="font-bold duru-sans">COMPANY</h1>
           <p className="mt-3">Privacy</p>
           <p className="mt-3">Terms of use</p>
           <p className="mt-3">Licence</p>
-          <p className="mt-3">Website editor</p>
         </div>
         <div>
-          <h1 className="font-bold">REGISTERED ADDRESS</h1>
+          <h1 className="font-bold duru-sans">REGISTERED ADDRESS</h1>
           <p className="mt-3">8 Godwin Osadebe Street, Akiti Avenue Okota, Lagos, Nigeria.</p>
         </div>
         <div className="w-[100%]">
-          <h1 className="font-bold">CONTACT</h1>
+          <h1 className="font-bold duru-sans">CONTACT</h1>
           <p className="mt-3">Support@compstack..com</p>
           <p>+2347070986778</p>
         </div>
