@@ -5,16 +5,26 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-10 py-5 pb-10 md:gap-28 lg:py-20 xl:flex-row ">
-      <div className="order-2 lg:order-1 mx-5 ">
-        <h1 className="font-DuplicateSans font-medium text-4xl lg:text-5xl leading-[3rem] lg:leading-[5rem] tracking-tighter break-words ">
-          Your Solution For <br />
-          <span className="text-[#004bad] underline">
-            Simplified
-          </span> Payroll <br />
-          Management
-        </h1>
-        <p className="mt-5 mb-5">
+    <section className="max-container lg:items-center lg:px-[5rem]  flex flex-col gap-10 py-5 pb-10 md:gap-28 lg:py-20 xl:flex-row mt-[1.5rem] pt-[5rem] lg:pt-[6rem]">
+      <div className="  lg:mx-[4rem] mx-5 lg:w-7/12">
+        <div className=" Duplicate-sans flex flex-row flex-wrap   text-4xl lg:text-6xl leading-[3rem] lg:leading-[5rem] tracking-tighter break-words mt-5 ">
+          <span>Your Solution for </span>
+          <div className="flex flex-wrap">
+            <span></span>
+            <div className="text-[#004bad] w-fit lg:ml-0 relative px-1 overflow-hidden lg:ml-3">
+              Simplified
+              <img
+                src="/line.png"
+                alt=""
+                className="absolute -bottom-1 lg:-bottom-2 h-2 lg:h-5 w-[100%] left-3"
+              />
+            </div>
+            {/* <span className="text-black">Payroll</span> */}
+            <span className="ml-1"> Payroll</span>
+            Management
+          </div>
+        </div>
+        <p className="mt-5 text-xl mb-5">
           Streamline your payroll effortlessly with Compstack, <br />
           eliminating repetitive tasks and deadlines.
         </p>
@@ -37,15 +47,24 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="order-1 lg:order-2">
+      <div className=" mt-5 lg:w-6/12">
         <Image
           src="/payroll-manager-illustration.svg"
           alt="payroll"
-          width={800}
-          height={100}
-          className="mt-0 pt-0"
+          width={1200}
+          height={200}
+          className=" pt-0"
         />
       </div>
+
+      <img
+        src="/Vector9.png"
+        className="absolute top-10 opacity-20 right-[15%] w-8 hidden  h-12 icon border lg:flex "
+      />
+      <img
+        src="/Vector10.png"
+        className="absolute top-16 icon opacity-20 left-15 w-12 hidden  h-12 border lg:flex mt-5 "
+      />
     </section>
   );
 };
