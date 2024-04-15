@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import NavBar from "../../components/navbar/NavBar";
 
 export const metadata: Metadata = {
-  title: "Compstack",
+  title: "Simplified Payroll Management",
   description: "Compstack landing page",
 };
 
