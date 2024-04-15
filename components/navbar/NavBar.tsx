@@ -36,13 +36,21 @@ const NavBar = () => {
             title="Join waitlist"
             icon="/arrow.svg"
             variant="btn_dark_blue"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdKLcXNDxNZUStPkOXVOtv5HoypsI71b3HGYAkPGxWor-DIbA/viewform?embedded=true",
+                "_blank"
+              )
+            }
           />
         </div>
       </div>
 
       <ul
         className={`h-fit absolute lg:hidden left-0 bg-white w-[100vw] pb-4 top-[4.5rem] gap-6  ${
-          showMenu ? "flex lg:hidden flex-col show pt-4 shadow-md" : "hidden hide"
+          showMenu
+            ? "flex lg:hidden flex-col show pt-4 shadow-md"
+            : "hidden hide"
         }`}
       >
         {NAV_LINKS.map((link) => (
@@ -52,7 +60,7 @@ const NavBar = () => {
             className="regular-16 flex justify-between hover:text-blue-500 items-center text-gray-50 px-[2rem] cursor-pointer pb-1.5 transition-all hover:font-bold"
           >
             {link.label}
-            <FaArrowRight className="w-3 h-3 tracking-normal text-primary-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1"/>
+            <FaArrowRight className="w-3 h-3 tracking-normal text-primary-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1" />
           </Link>
         ))}
       </ul>

@@ -21,8 +21,8 @@ const Footer = () => {
         </div>
         <div className="w-[100%]">
           <h1 className="font-bold duru-sans">CONTACT</h1>
-          <p className="mt-3">Support@compstack..com</p>
-          <p> +212 623-539422</p>
+          <p className="mt-3"> contact@trycompstack.com</p>
+          <p>+212705997236</p>
         </div>
         <div className="w-[100%]">
           <div className="flex gap-5 ">

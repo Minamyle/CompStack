@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Checkbox from "./CheckBox";
@@ -37,6 +38,12 @@ const Hero = () => {
             title="Join waitlist"
             icon="/arrow.svg"
             variant="btn_dark_blue"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdKLcXNDxNZUStPkOXVOtv5HoypsI71b3HGYAkPGxWor-DIbA/viewform?embedded=true",
+                "_blank"
+              )
+            }
           />
           <Button
             type="button"
@@ -47,13 +54,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" mt-5 lg:w-6/12">
+      <div className=" mt-5 lg:w-10/12">
         <Image
           src="/payroll-manager-illustration.svg"
           alt="payroll"
-          width={1200}
-          height={200}
-          className=" pt-0"
+          width={2000}
+          height={400}
+          className=" lg:w-[fit] pt-0"
         />
       </div>
 
