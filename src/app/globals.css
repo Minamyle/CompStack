@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Duplicate Sans';
-  src: url('/public/fonts/DuplicateSans-Medium.eot');
+  src: url('/public/fonts/DuplicateSans-Medium.woff2');
 }
 .Duplicate-sans {
   font-family: 'Duplicate Sans', sans-serif;

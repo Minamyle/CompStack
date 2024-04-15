@@ -11,16 +11,16 @@ const Hero = () => {
           <span>Your Solution for </span>
           <div className="flex flex-wrap">
             <span></span>
-            <div className="text-[#004bad] w-fit lg:ml-0 relative px-1 overflow-hidden lg:ml-3">
+            <div className="text-[#004bad] w-fit  lg:ml-0 relative px-0 overflow-hidden">
               Simplified
               <img
-                src="/line.png"
+                src="/horizontal.svg"
                 alt=""
-                className="absolute -bottom-1 lg:-bottom-2 h-2 lg:h-5 w-[100%] left-3"
+                className="absolute -bottom-1 lg:-bottom-2 h-5 lg:h-8 w-[100%] left-0"
               />
             </div>
             {/* <span className="text-black">Payroll</span> */}
-            <span className="ml-1"> Payroll</span>
+            <span className="ml-2"> Payroll</span>
             Management
           </div>
         </div>
