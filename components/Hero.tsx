@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="max-container lg:items-center lg:px-[5rem]  flex flex-col gap-10 py-5 pb-10 md:gap-28 lg:py-20 xl:flex-row mt-[1.5rem] pt-[5rem] lg:pt-[6rem]">
       <div className="  lg:mx-[4rem] mx-5 lg:w-7/12">
-        <div className=" Duplicate-sans flex flex-row flex-wrap   text-4xl lg:text-6xl leading-[3rem] lg:leading-[5rem] tracking-tighter break-words mt-5 ">
+        <div className=" Duplicate-sans flex flex-row flex-wrap   text-4xl lg:text-4xl leading-[3rem] lg:leading-[3rem] tracking-tighter break-words mt-5 ">
           <span>Your Solution for </span>
           <div className="flex flex-wrap">
             <span></span>
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" mt-5 lg:w-10/12">
+      <div className=" mt-5 lg:w-12/12">
         <Image
           src="/payroll-manager-illustration.svg"
           alt="payroll"
