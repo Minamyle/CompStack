@@ -5,9 +5,11 @@ import { NAV_LINKS } from "../../constant/index";
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "../Button";
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="flex fixed dm-sans justify-between items-center px-[1rem] lg:px-[5%] max-w-[100vw]  bg-white w-[100%] z-30 py-3">
       <Link href="/">
@@ -21,13 +23,21 @@ const NavBar = () => {
       <div className="flex gap-6 items-center">
         <ul className={`h-fit hidden lg:flex gap-3 `}>
           {NAV_LINKS.map((link) => (
-            <Link
-              href={link.href}
+            <ScrollLink
+              to={
+                link.key === "Contact_Us"
+                  ? "footer"
+                  : link.key === "Products"
+                  ? "compact"
+                  : ""
+              }
+              smooth={true}
+              duration={500}
               key={link.key}
               className="regular-12 text-sm flex justify-between hover:text-blue-500 cursor-pointer items-center text-gray-50 px-[1.25rem] font-[500] pb-1.5 transition-all hover:font-bold"
             >
               {link.label}
-            </Link>
+            </ScrollLink>
           ))}
         </ul>
         <div className="lg:flexCenter hidden">
@@ -54,14 +64,16 @@ const NavBar = () => {
         }`}
       >
         {NAV_LINKS.map((link) => (
-          <Link
-            href={link.href}
+          <ScrollLink
+            to={link.key === "Contact_Us" ? "footer" : ""}
+            smooth={true}
+            duration={500}
             key={link.key}
             className="regular-16 flex justify-between hover:text-blue-500 items-center text-gray-50 px-[2rem] cursor-pointer pb-1.5 transition-all hover:font-bold"
           >
             {link.label}
             <FaArrowRight className="w-3 h-3 tracking-normal text-primary-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1" />
-          </Link>
+          </ScrollLink>
         ))}
       </ul>
 

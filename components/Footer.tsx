@@ -3,14 +3,27 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="border dm-sans mt-[5rem] ">
+    <div id="footer" className="border dm-sans mt-[5rem] ">
       <hr />
       <div className="flex flex-col px-[1rem] lg:grid gap-12 py-16 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-container">
         <div className="w-[100%]">
           <h1 className="font-bold duru-sans">COMPANY</h1>
-          <p className="mt-3">Privacy</p>
-          <p className="mt-3">Terms of use</p>
-          <p className="mt-3">Licence</p>
+          <div>
+            <a
+              href="https://www.notion.so/compstack/VERSION-1-8e6c364549624d11be4da045a1f4223d"
+              className="mt-3 "
+            >
+              Privacy
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.notion.so/compstack/VERSION-1-437fb3271d5f40498a73df525ac26a2f"
+              className="mt-3"
+            >
+              Terms of use
+            </a>
+          </div>
         </div>
         <div>
           <h1 className="font-bold duru-sans">REGISTERED ADDRESS</h1>

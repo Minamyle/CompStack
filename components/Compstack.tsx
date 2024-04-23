@@ -2,7 +2,10 @@ import React from "react";
 import Image from "next/image";
 const Compstack = () => {
   return (
-    <div className="max- relative dm-sans px-[1rem] -container mt-20 flex flex-col items-center justify-center mb-[3rem]">
+    <div
+      id="compact"
+      className="max- relative dm-sans px-[1rem] -container mt-20 flex flex-col items-center justify-center mb-[3rem]"
+    >
       <h1 className="text-center Duplicate-sans text-xl lg:text-5xl mb-5 lg:mb-3 font-bold ">
         CompStack Solves All Your Payroll Needs
       </h1>

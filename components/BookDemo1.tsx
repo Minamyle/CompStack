@@ -36,14 +36,14 @@ const BookDemo1 = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-16">
+      {/* <div className="flex items-center justify-center mt-16">
         <Button
           type="button"
           title="Book a demo"
           icon="/arrowblue.svg"
           variant="btn_plain_white"
         />
-      </div>
+      </div> */}
 
       <img
         src="/vector2.svg"
